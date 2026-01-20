@@ -1,7 +1,7 @@
-# exe1
+# 2026 衛福部工作坊 教學範例 Eercise 1
 
 > [!important]
-> 此範例僅供課程教學使用
+> 此範例僅供 2026 衛福部工作坊 教學使用
 
 ## 授權與來源
 本專案中的 `html` 改編自 [SMART on FHIR JavaScript Tutorial](https://docs.smarthealthit.org/tutorials/javascript/)
