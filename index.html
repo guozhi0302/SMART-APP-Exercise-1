@@ -32,7 +32,7 @@
                 // Render the current patient (or any error)
                 client.patient.read().then(
                     function(pt) {
-                        document.getElementById("patient").innerText = JSON.stringify(pt, null, 4);
+                        document.getElementById("patient").innerText = JSON.stringify(pt, null, 4).replace(/\n/, '<br>');
                     },
                     function(error) {
                         document.getElementById("patient").innerText = error.stack;
@@ -57,7 +57,7 @@
                 // Render the current patient's medications (or any error)
                 .then(
                     function(meds) {
-                        document.getElementById("meds").innerText = JSON.stringify(meds, null, 4);
+                        document.getElementById("meds").innerText = JSON.stringify(meds, null, 4).replace(/\n/, '<br>');
                     },
                     function(error) {
                         document.getElementById("meds").innerText = error.stack;
@@ -82,7 +82,7 @@
                 // Render the current patient's medications (or any error)
                 .then(
                     function(observs) {
-                        document.getElementById("observs").innerText = JSON.stringify(observs, null, 4);
+                        document.getElementById("observs").innerText = JSON.stringify(observs, null, 4).replace(/\n/, '<br>');
                     },
                     function(error) {
                         document.getElementById("observs").innerText = error.stack;
