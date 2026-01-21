@@ -20,11 +20,11 @@
     <body>
         <div class="container">
             <h4>Current Patient</h4>
-            <textarea id="patient" class="results">Loading...</textarea>
+            <textarea id="patient" class="results" cols="100">Loading...</textarea>
             <h4>Medications</h4>
-            <textarea id="meds" class="results">Loading...</textarea>
+            <textarea id="meds" class="results" cols="100">Loading...</textarea>
             <h4>Observations</h4>
-            <textarea id="observs" class="results">Loading...</textarea>
+            <textarea id="observs" class="results" cols="100">Loading...</textarea>
         </div>
         <script type="text/javascript">
             FHIR.oauth2.ready().then(function(client) {
