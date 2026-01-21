@@ -13,17 +13,19 @@
                 height: 30vh;
                 overflow: scroll;
                 border: 1px solid #CCC;
+                margin: 0px 5px;
             }
         </style>
     </head>
     <body>
-        <h4>Current Patient</h4>
-        <div id="patient" class="results">Loading...</div>
-        <br/>
-        <h4>Medications</h4>
-        <div id="meds" class="results">Loading...</div>
-        <h4>Observations</h4>
-        <div id="observs" class="results">Loading...</div>
+        <div class="container">
+            <h4>Current Patient</h4>
+            <textarea id="patient" class="results">Loading...</textarea>
+            <h4>Medications</h4>
+            <textarea id="meds" class="results">Loading...</textarea>
+            <h4>Observations</h4>
+            <textarea id="observs" class="results">Loading...</textarea>
+        </div>
         <script type="text/javascript">
             FHIR.oauth2.ready().then(function(client) {
                 
