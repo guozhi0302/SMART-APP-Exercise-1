@@ -5,7 +5,7 @@
         <title>Example SMART App</title>
         <script src="https://cdn.jsdelivr.net/npm/fhirclient/build/fhir-client.js"></script>
         <style>
-            #patient, #meds {
+             .results {
                 font-family: Monaco, monospace;
                 white-space: pre;
                 font-size: 13px;
@@ -17,12 +17,12 @@
     </head>
     <body>
         <h4>Current Patient</h4>
-        <div id="patient">Loading...</div>
+        <div id="patient" class="results">Loading...</div>
         <br/>
         <h4>Medications</h4>
-        <div id="meds">Loading...</div>
+        <div id="meds" class="results">Loading...</div>
         <h4>Observations</h4>
-        <div id="observs">Loading...</div>
+        <div id="observs" class="results">Loading...</div>
         <script type="text/javascript">
             FHIR.oauth2.ready().then(function(client) {
                 
